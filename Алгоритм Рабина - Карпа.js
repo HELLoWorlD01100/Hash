@@ -7,9 +7,9 @@ function hashSum(string)
 }
 let string = 'abcabc';
 let substring = 'abc';
-var result = '';
-var substringHash = hashSum(substring);
-var stringHash = hashSum(string.substr(i, substring.length));
+let result = '';
+let substringHash = hashSum(substring);
+let stringHash = hashSum(string.substr(i, substring.length));
 for (var i = 0; i <= string.length - substring.length; i++) {
   if (substringHash == stringHash){
     for (var j = 0; string.charAt(i + j) == substring.charAt(j); j++) {
