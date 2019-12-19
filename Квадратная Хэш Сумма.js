@@ -11,7 +11,6 @@ let result = [];
 let substringHash = hashSum(substring);
 let stringHash = hashSum(string.slice(0, substring.length));
 for (var i = 0; i <= string.length - substring.length; i++) {
-  stringHash = hashSum(string.substr(i, substring.length));
   if (substringHash == stringHash){
     for (var j = 0; string.charAt(i + j) == substring.charAt(j); j++) {
         if (j == substring.length - 1) {
