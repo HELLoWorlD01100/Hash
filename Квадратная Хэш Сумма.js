@@ -9,7 +9,7 @@ let string = 'cababcabcacb';
 let substring = 'abc';
 let result = [];
 let substringHash = hashSum(substring);
-let stringHash = hashSum(string.slice(0, substring.length));
+let stringHash = hashSum(string.substr(0, substring.length));
 for (var i = 0; i <= string.length - substring.length; i++) {
   if (substringHash == stringHash){
     for (var j = 0; string.charAt(i + j) == substring.charAt(j); j++) {
